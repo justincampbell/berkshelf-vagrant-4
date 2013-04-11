@@ -1,4 +1,6 @@
 Vagrant.configure("2") do |config|
+  config.berkshelf.enabled = true
+
   config.vm.hostname = "berkshelf-vagrant-4-berkshelf"
   config.vm.box = "Berkshelf-CentOS-6.3-x86_64-minimal"
   config.vm.box_url = "https://dl.dropbox.com/u/31081437/Berkshelf-CentOS-6.3-x86_64-minimal.box"
